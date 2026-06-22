@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evanssion — Cybersecurity &amp; AI Value-Added Distributor | Middle East &amp; Africa</title>
+<meta name="description" content="Evanssion is the leading Cybersecurity and AI Value-Added Distributor (VAD) across Middle East and Africa. 15+ years delivering cloud-native security, identity, cyber defense and AI security solutions.">
+<meta property="og:title" content="Evanssion — Cybersecurity &amp; AI VAD for MEA">
+<meta property="og:description" content="The region's leading cybersecurity and AI value-added distributor. 200+ enterprises. 100+ channel partners. Headquartered in Dubai.">
+<link rel="stylesheet" href="assets/css/evanssion.css">
+<style>
+#hero{background:var(--midnight);min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding-top:68px}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse 80% 80% at 50% 50%,black 30%,transparent 100%)}
+.hero-glow{position:absolute;top:-20%;left:50%;transform:translateX(-50%);width:900px;height:600px;background:radial-gradient(ellipse,rgba(0,194,168,0.12) 0%,transparent 70%);pointer-events:none}
+.hero-glow2{position:absolute;bottom:-10%;right:-10%;width:600px;height:600px;background:radial-gradient(ellipse,rgba(0,145,255,0.08) 0%,transparent 70%);pointer-events:none}
+.hero-content{position:relative;z-index:2;max-width:800px}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(0,194,168,0.12);border:1px solid rgba(0,194,168,0.25);border-radius:20px;padding:0.35rem 1rem;margin-bottom:2rem}
+.hero-badge-dot{width:7px;height:7px;border-radius:50%;background:var(--teal);animation:pulse 2s infinite}
+.hero-badge-text{font-size:0.75rem;font-weight:600;color:var(--teal);font-family:var(--inter);letter-spacing:0.05em}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.4}}
+.hero-title{color:var(--ghost);margin-bottom:1.5rem}
+.hero-title span{color:var(--teal)}
+.hero-subtitle{font-size:1.125rem;color:var(--mist);max-width:580px;margin-bottom:2.5rem;line-height:1.75}
+.hero-actions{display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+.hero-stats{display:flex;gap:3rem;margin-top:4rem;padding-top:3rem;border-top:1px solid rgba(255,255,255,0.07);flex-wrap:wrap}
+.hero-stat-num{font-family:var(--pjs);font-size:2.2rem;font-weight:800;color:var(--ghost);letter-spacing:-0.04em}
+.hero-stat-num span{color:var(--teal)}
+.hero-stat-label{font-size:0.8rem;color:var(--mist);font-family:var(--inter);margin-top:2px}
+.hero-scroll{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:6px;color:var(--smoke);font-size:0.72rem;font-family:var(--inter);letter-spacing:0.08em;text-transform:uppercase}
+.scroll-line{width:1px;height:40px;background:linear-gradient(to bottom,transparent,var(--teal));animation:scrollpulse 2s infinite}
+@keyframes scrollpulse{0%{height:0;opacity:0}50%{opacity:1}100%{height:40px;opacity:0}}
+#ticker{background:var(--obsidian);border-top:1px solid rgba(255,255,255,0.07);border-bottom:1px solid rgba(255,255,255,0.07);padding:0.875rem 0;overflow:hidden}
+.ticker-track{display:flex;gap:3rem;animation:ticker 30s linear infinite;white-space:nowrap}
+.ticker-item{display:flex;align-items:center;gap:0.6rem;font-size:0.8rem;font-weight:500;color:var(--mist);font-family:var(--inter);flex-shrink:0}
+.ticker-dot{width:5px;height:5px;border-radius:50%;background:var(--teal);flex-shrink:0}
+@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.about-image{border-radius:16px;overflow:hidden;position:relative}
+.about-image img{width:100%;height:440px;object-fit:cover}
+.about-badge{position:absolute;bottom:1.5rem;left:1.5rem;background:rgba(11,17,32,0.85);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:1rem 1.25rem}
+.about-badge-num{font-family:var(--pjs);font-size:1.6rem;font-weight:800;color:var(--teal)}
+.about-badge-label{font-size:0.78rem;color:var(--mist);font-family:var(--inter)}
+.sol-card{background:var(--ivory);border:1px solid var(--border-light);border-radius:14px;padding:1.75rem;transition:transform 0.25s,box-shadow 0.25s,border-color 0.25s;position:relative;overflow:hidden}
+.sol-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--teal);transform:scaleX(0);transform-origin:left;transition:transform 0.3s}
+.sol-card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,0.1);border-color:rgba(0,194,168,0.2)}
+.sol-card:hover::before{transform:scaleX(1)}
+.sol-icon{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem}
+.sol-icon-teal{background:rgba(0,194,168,0.12)}.sol-icon-blue{background:rgba(0,145,255,0.12)}.sol-icon-violet{background:rgba(124,110,247,0.12)}.sol-icon-amber{background:rgba(249,115,22,0.12)}
+.sol-card h3{margin-bottom:0.5rem;font-size:1.05rem}
+.sol-card p{font-size:0.88rem;color:var(--smoke);line-height:1.65}
+.vendor-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,0.07);border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.07)}
+.vendor-card{background:var(--obsidian);padding:1.75rem;transition:background 0.2s}
+.vendor-card:hover{background:var(--slate)}
+.vendor-name{font-family:var(--pjs);font-size:1rem;font-weight:700;color:var(--ghost);margin-bottom:0.35rem}
+.vendor-desc{font-size:0.8rem;color:var(--mist);line-height:1.55;font-family:var(--inter)}
+.vendor-tag{display:inline-block;margin-top:0.75rem;padding:0.25rem 0.7rem;border-radius:20px;font-size:0.7rem;font-weight:600;font-family:var(--inter)}
+.tag-teal{background:rgba(0,194,168,0.12);color:var(--teal);border:1px solid rgba(0,194,168,0.2)}
+.tag-blue{background:rgba(0,145,255,0.12);color:#6bc5ff;border:1px solid rgba(0,145,255,0.2)}
+.tag-violet{background:rgba(124,110,247,0.12);color:#b0a8fb;border:1px solid rgba(124,110,247,0.2)}
+.tag-amber{background:rgba(249,115,22,0.12);color:#fdba74;border:1px solid rgba(249,115,22,0.2)}
+@media(max-width:900px){.vendor-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.vendor-grid{grid-template-columns:1fr}}
+.offer-tabs{display:flex;gap:0.5rem;justify-content:center;margin-bottom:3rem;flex-wrap:wrap}
+.offer-tab{padding:0.5rem 1.25rem;border-radius:20px;font-size:0.85rem;font-weight:500;cursor:pointer;border:1px solid var(--border-light);color:var(--smoke);font-family:var(--inter);transition:all 0.2s}
+.offer-tab.active{background:var(--midnight);color:var(--ghost);border-color:var(--midnight)}
+.offer-panel{display:none;animation:fadeIn 0.3s ease}
+.offer-panel.active{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.offer-card{background:var(--parchment);border-radius:12px;padding:1.5rem;border:1px solid transparent;transition:border-color 0.2s}
+.offer-card:hover{border-color:rgba(0,194,168,0.25)}
+@media(max-width:600px){.offer-panel.active{grid-template-columns:1fr}}
+.ind-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.ind-card{background:var(--ivory);border:1px solid var(--border-light);border-radius:12px;padding:1.5rem 1.75rem;transition:all 0.2s;display:flex;align-items:flex-start;gap:1rem}
+.ind-card:hover{border-color:rgba(0,194,168,0.25);transform:translateY(-2px)}
+.ind-icon{font-size:1.5rem;flex-shrink:0;width:42px;height:42px;display:flex;align-items:center;justify-content:center;border-radius:9px;background:var(--parchment)}
+@media(max-width:900px){.ind-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.ind-grid{grid-template-columns:1fr}}
+.vm-glow{position:absolute;top:-30%;right:-10%;width:600px;height:600px;background:radial-gradient(ellipse,rgba(124,110,247,0.1) 0%,transparent 70%);pointer-events:none}
+.vm-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;position:relative;z-index:1}
+.vm-card{background:var(--slate);border:1px solid rgba(255,255,255,0.07);border-radius:16px;padding:2.5rem}
+@media(max-width:700px){.vm-grid{grid-template-columns:1fr}}
+.leader-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;max-width:800px;margin:0 auto}
+.leader-card{background:var(--parchment);border-radius:14px;padding:2rem;text-align:center;border:1px solid var(--border-light);transition:all 0.2s}
+.leader-card:hover{border-color:rgba(0,194,168,0.25);transform:translateY(-3px)}
+.leader-avatar{width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,var(--slate),var(--obsidian));margin:0 auto 1rem;display:flex;align-items:center;justify-content:center;font-family:var(--pjs);font-size:1.3rem;font-weight:800;color:var(--teal)}
+@media(max-width:600px){.leader-grid{grid-template-columns:1fr}}
+.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.news-card{background:var(--ivory);border-radius:14px;overflow:hidden;border:1px solid var(--border-light);transition:all 0.25s;display:block}
+.news-card:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(0,0,0,0.08)}
+.news-img{height:180px;position:relative;overflow:hidden;background:linear-gradient(135deg,var(--slate),var(--obsidian))}
+.news-img img{width:100%;height:100%;object-fit:cover}
+.news-cat{position:absolute;top:12px;left:12px;padding:0.25rem 0.65rem;border-radius:20px;font-size:0.68rem;font-weight:700;font-family:var(--inter);text-transform:uppercase}
+.cat-event{background:rgba(0,145,255,0.15);color:#6bc5ff;border:1px solid rgba(0,145,255,0.25)}
+.cat-press{background:rgba(124,110,247,0.15);color:#b0a8fb;border:1px solid rgba(124,110,247,0.25)}
+.news-body{padding:1.25rem}
+.news-date{font-size:0.75rem;color:var(--smoke);font-family:var(--inter);margin-bottom:0.5rem}
+.news-title{font-size:0.95rem;font-weight:600;color:var(--ink);line-height:1.45;font-family:var(--pjs)}
+.news-read{font-size:0.78rem;font-weight:600;color:var(--teal);font-family:var(--inter);margin-top:0.75rem;display:flex;align-items:center;gap:4px;transition:gap 0.2s}
+.news-card:hover .news-read{gap:8px}
+@media(max-width:900px){.news-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.news-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logo.jpg" alt="Evanssion" class="nav-logo-img">
+    </a>
+    <div class="nav-links">
+      <div class="nav-item">
+        <span class="nav-link">Solutions<svg class="nav-chevron" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <div class="dropdown">
+          <a href="solutions/cloud-native.html" class="dropdown-item">Cloud Native Security<div class="dd-label">CNAPP, containers, Kubernetes</div></a>
+          <a href="solutions/identity-security.html" class="dropdown-item">Identity Security<div class="dd-label">PAM, IAM, zero trust</div></a>
+          <a href="solutions/cyber-defense.html" class="dropdown-item">Cyber Defense<div class="dd-label">NDR, threat hunting, SOC</div></a>
+          <a href="solutions/ai-security.html" class="dropdown-item">AI Security<div class="dd-label">AI governance, LLM security</div></a>
+          <a href="solutions/app-security.html" class="dropdown-item">Application Security<div class="dd-label">API security, DAST, SBOM</div></a>
+          <a href="solutions/data-security.html" class="dropdown-item">Data Security<div class="dd-label">Data privacy, classification</div></a>
+          <a href="solutions/browser-security.html" class="dropdown-item">Browser Security<div class="dd-label">Enterprise browser protection</div></a>
+          <a href="solutions/cyber-resilience.html" class="dropdown-item">Cyber Resilience<div class="dd-label">Cyber ranges, drills, BAS</div></a>
+        </div>
+      </div>
+      <div class="nav-item"><a href="vendors/index.html#vendor-portfolio" class="nav-link">Vendors</a></div>
+      <div class="nav-item">
+        <span class="nav-link">Partners<svg class="nav-chevron" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <div class="dropdown">
+          <a href="partners/index.html" class="dropdown-item">Why Partner with Evanssion</a>
+          <a href="partners/index.html#program" class="dropdown-item">Channel Partner Program</a>
+          <a href="partners/index.html#enablement" class="dropdown-item">Sales &amp; Technical Enablement</a>
+          <a href="partners/index.html#deal" class="dropdown-item">Register a Deal</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <span class="nav-link">Industries<svg class="nav-chevron" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <div class="dropdown">
+          <a href="industries/index.html#bfsi" class="dropdown-item">BFSI</a>
+          <a href="industries/index.html#government" class="dropdown-item">Government &amp; Federal</a>
+          <a href="industries/index.html#telecom" class="dropdown-item">Telecom</a>
+          <a href="industries/index.html#enterprise" class="dropdown-item">Large Enterprise</a>
+          <a href="industries/index.html#healthcare" class="dropdown-item">Healthcare</a>
+          <a href="industries/index.html#energy" class="dropdown-item">Energy &amp; OT/ICS</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <span class="nav-link">Knowledge<svg class="nav-chevron" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <div class="dropdown">
+          <a href="knowledge/index.html#thought-leadership" class="dropdown-item">Thought Leadership</a>
+          <a href="knowledge/index.html#mea-threat" class="dropdown-item">MEA Threat Landscape</a>
+          <a href="knowledge/index.html#research" class="dropdown-item">Research &amp; Reports</a>
+          <a href="knowledge/index.html#blog" class="dropdown-item">Threat Intelligence Blog</a>
+          <a href="knowledge/index.html#case-studies" class="dropdown-item">Case Studies</a>
+          <a href="knowledge/index.html#videos" class="dropdown-item">Videos &amp; Webinars</a>
+          <a href="knowledge/index.html#events" class="dropdown-item">Events</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <span class="nav-link">Company<svg class="nav-chevron" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <div class="dropdown">
+          <a href="company/about.html" class="dropdown-item">About Us</a>
+          <a href="company/leadership.html" class="dropdown-item">Leadership Team</a>
+          <a href="company/coverage.html" class="dropdown-item">MEA Coverage</a>
+          <a href="company/newsroom.html" class="dropdown-item">Newsroom</a>
+          <a href="company/careers.html" class="dropdown-item">Careers</a>
+        </div>
+      </div>
+      <a href="contact.html" class="nav-cta">Contact Us</a>
+    </div>
+    <button class="nav-mobile-toggle" onclick="toggleMobileMenu()" aria-label="Menu">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M3 6h16M3 11h16M3 16h16" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-section-label">Solutions</div>
+  <a href="solutions/cloud-native.html" class="mobile-nav-link">Cloud Native Security</a>
+  <a href="solutions/identity-security.html" class="mobile-nav-link">Identity Security</a>
+  <a href="solutions/cyber-defense.html" class="mobile-nav-link">Cyber Defense</a>
+  <a href="solutions/ai-security.html" class="mobile-nav-link">AI Security</a>
+  <a href="solutions/app-security.html" class="mobile-nav-link">Application Security</a>
+  <a href="solutions/data-security.html" class="mobile-nav-link">Data Security</a>
+  <a href="solutions/browser-security.html" class="mobile-nav-link">Browser Security</a>
+  <a href="solutions/cyber-resilience.html" class="mobile-nav-link">Cyber Resilience</a>
+  <div class="mobile-section-label">Company</div>
+  <a href="vendors/index.html#vendor-portfolio" class="mobile-nav-link">Vendors</a>
+  <a href="partners/index.html" class="mobile-nav-link">Partners</a>
+  <a href="industries/index.html" class="mobile-nav-link">Industries</a>
+  <a href="knowledge/index.html" class="mobile-nav-link">Knowledge Hub</a>
+  <a href="company/about.html" class="mobile-nav-link">About Us</a>
+  <a href="company/leadership.html" class="mobile-nav-link">Leadership</a>
+  <a href="company/newsroom.html" class="mobile-nav-link">Newsroom</a>
+  <a href="company/careers.html" class="mobile-nav-link">Careers</a>
+  <a href="contact.html" class="mobile-nav-link" style="color:var(--teal);font-weight:600">Contact Us</a>
+</div>
+
+<section id="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge"><span class="hero-badge-dot"></span><span class="hero-badge-text">Cybersecurity &amp; AI · Middle East &amp; Africa</span></div>
+      <h1 class="display hero-title">Elevate Your<br><span>Cyber Readiness.</span><br>Embrace What's Next.</h1>
+      <p class="hero-subtitle">Evanssion is the region's leading Value-Added Distributor specialised in Cybersecurity and AI — connecting the world's most disruptive security technologies with enterprises across MEA.</p>
+      <div class="hero-actions">
+        <a href="index.html#specialise" class="btn-primary">Explore Solutions ↗</a>
+        <a href="vendors/index.html#vendor-portfolio" class="btn-outline">Our Vendor Portfolio</a>
+      </div>
+      <div class="hero-stats">
+        <div><div class="hero-stat-num">15<span>+</span></div><div class="hero-stat-label">Years in MEA</div></div>
+        <div><div class="hero-stat-num">200<span>+</span></div><div class="hero-stat-label">Enterprise clients</div></div>
+        <div><div class="hero-stat-num">100<span>+</span></div><div class="hero-stat-label">Channel partners</div></div>
+        <div><div class="hero-stat-num">12<span>+</span></div><div class="hero-stat-label">Vendor partnerships</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">Scroll<span class="scroll-line"></span></div>
+</section>
+
+<div id="ticker">
+  <div class="ticker-track">
+    <span class="ticker-item"><span class="ticker-dot"></span>Silent Push · Preemptive Cyber Intelligence</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>Backflipt · Agent-to-Agent Security</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>DefectDojo · Unified Vulnerability Management</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>Databahn · Data Fabric for Enterprises</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>ReversingLabs · Software Supply Chain Security</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>Arambh Labs · Agentic AI for SecOps</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>Operlity · Full Stack GRC Solution</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>WitnessAI · AI Security &amp; Governance</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>Patchifi · Autonomous Endpoint Management</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>Illumio · Breach Containment Platform</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>ExtraHop · Network Detection &amp; Response</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>Cyber Ranges · Cyber Resilience &amp; Drills</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>Silent Push · Preemptive Cyber Intelligence</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>Backflipt · Agent-to-Agent Security</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>DefectDojo · Unified Vulnerability Management</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>Databahn · Data Fabric for Enterprises</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>ReversingLabs · Software Supply Chain Security</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>Arambh Labs · Agentic AI for SecOps</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>Operlity · Full Stack GRC Solution</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>WitnessAI · AI Security &amp; Governance</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>Patchifi · Autonomous Endpoint Management</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>Illumio · Breach Containment Platform</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>ExtraHop · Network Detection &amp; Response</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>Cyber Ranges · Cyber Resilience &amp; Drills</span>
+  </div>
+</div>
+
+<section class="section" style="background:var(--ivory)">
+  <div class="container">
+    <div class="grid-2">
+      <div class="reveal">
+        <span class="eyebrow">Who we are</span>
+        <h2>The MEA Region's Trusted Cybersecurity VAD</h2>
+        <p style="margin-top:1.25rem">Evanssion is a Value-Added Distributor (VAD) specialised in Network, Cloud, and AI Security across the Middle East &amp; Africa.</p>
+        <p>Built on the foundation of identifying and providing early access to technology disruptors from the hotspots of innovation, we proactively work with our customers and partners in addressing their most critical challenges.</p>
+        <p>Headquartered in Dubai, with 15+ years of innovation-driven expertise, we partner with visionary technology companies to deliver cutting-edge, early-access solutions that address modern AI &amp; security challenges.</p>
+        <a href="company/about.html" class="btn-primary" style="margin-top:1.75rem">Learn more about us ↗</a>
+      </div>
+      <div class="about-image reveal reveal-delay-2">
+        <img src="https://www.evanssion.com/wp-content/uploads/2025/05/who-we.webp" alt="Evanssion team" loading="lazy">
+        <div class="about-badge">
+          <div class="about-badge-num">15+</div>
+          <div class="about-badge-label" style="color:var(--mist);font-family:var(--inter)">Years delivering<br>security excellence in MEA</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="specialise" class="section" style="background:var(--parchment)">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">Our solutions</span>
+      <h2>We Specialise In</h2>
+      <p class="lead" style="margin-top:1rem">Delivering the most disruptive security technologies across eight critical domains — built for the unique threat landscape of MEA.</p>
+    </div>
+    <div class="grid-4">
+      <div class="sol-card reveal"><div class="sol-icon sol-icon-teal"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00C2A8" stroke-width="1.75" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><h3>Cloud Native Security</h3><p>Protect containers, Kubernetes, and multi-cloud environments with CNAPP built for MEA.</p><a href="solutions/cloud-native.html" class="sol-link">Explore →</a></div>
+      <div class="sol-card reveal reveal-delay-1"><div class="sol-icon sol-icon-violet"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7C6EF7" stroke-width="1.75" stroke-linecap="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><h3>Identity Security</h3><p>Protect every identity — human and machine — with PAM, IAM, and zero trust controls.</p><a href="solutions/identity-security.html" class="sol-link">Explore →</a></div>
+      <div class="sol-card reveal reveal-delay-2"><div class="sol-icon sol-icon-blue"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0091FF" stroke-width="1.75" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>Cyber Defense</h3><p>Stay ahead of threats with advanced NDR, threat hunting, and SOC enablement for MEA.</p><a href="solutions/cyber-defense.html" class="sol-link">Explore →</a></div>
+      <div class="sol-card reveal reveal-delay-3"><div class="sol-icon sol-icon-violet"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7C6EF7" stroke-width="1.75" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4"/></svg></div><h3>AI Security</h3><p>Govern AI deployments with guardrails and runtime security. Protect LLMs and agentic workflows.</p><a href="solutions/ai-security.html" class="sol-link">Explore →</a></div>
+      <div class="sol-card reveal"><div class="sol-icon sol-icon-amber"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="1.75" stroke-linecap="round"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg></div><h3>Application Security</h3><p>Protect APIs, web apps, and software supply chains with DAST, SBOM, and code integrity.</p><a href="solutions/app-security.html" class="sol-link">Explore →</a></div>
+      <div class="sol-card reveal reveal-delay-1"><div class="sol-icon sol-icon-teal"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00C2A8" stroke-width="1.75" stroke-linecap="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div><h3>Data Security</h3><p>Discover, classify, and protect sensitive data. Stay compliant with UAE PDPL and regional mandates.</p><a href="solutions/data-security.html" class="sol-link">Explore →</a></div>
+      <div class="sol-card reveal reveal-delay-2"><div class="sol-icon sol-icon-blue"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0091FF" stroke-width="1.75" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M8 2v4M16 2v4M2 10h20"/></svg></div><h3>Browser Security</h3><p>Transform any enterprise browser into the most secure workspace. Protect SaaS and remote workers.</p><a href="solutions/browser-security.html" class="sol-link">Explore →</a></div>
+      <div class="sol-card reveal reveal-delay-3"><div class="sol-icon sol-icon-teal"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00C2A8" stroke-width="1.75" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div><h3>Cyber Resilience</h3><p>Test, train, and strengthen your defenses with live-fire cyber drills and BAS exercises.</p><a href="solutions/cyber-resilience.html" class="sol-link">Explore →</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--midnight)">
+  <div class="container">
+    <div class="section-header reveal" style="margin-bottom:3.5rem">
+      <span class="eyebrow" style="color:var(--teal)">Our vendor portfolio</span>
+      <h2 style="color:var(--ghost)">Leading Cybersecurity &amp; AI Innovators</h2>
+      <p style="color:var(--mist);max-width:540px;margin:0.75rem auto 0">We identify and bring the world's most disruptive security technologies to the MEA market — before anyone else.</p>
+    </div>
+    <div class="vendor-grid reveal">
+      <div class="vendor-card"><div class="vendor-name">Silent Push</div><div class="vendor-desc">Preemptive Cyber Intelligence with IOFA — stop attacks before they launch.</div><span class="vendor-tag tag-blue">Threat Intel</span></div>
+      <div class="vendor-card"><div class="vendor-name">Backflipt</div><div class="vendor-desc">Agent-to-Agent Security — govern and secure AI agent interactions.</div><span class="vendor-tag tag-violet">AI Security</span></div>
+      <div class="vendor-card"><div class="vendor-name">DefectDojo</div><div class="vendor-desc">Risk-Based Unified Vulnerability Management across your stack.</div><span class="vendor-tag tag-amber">App Security</span></div>
+      <div class="vendor-card"><div class="vendor-name">Databahn</div><div class="vendor-desc">The Ultimate Data Fabric for Enterprises — multi-cloud orchestration.</div><span class="vendor-tag tag-teal">Data Security</span></div>
+      <div class="vendor-card"><div class="vendor-name">ReversingLabs</div><div class="vendor-desc">Malware Analysis &amp; Software Supply Chain Security at scale.</div><span class="vendor-tag tag-amber">App Security</span></div>
+      <div class="vendor-card"><div class="vendor-name">Arambh Labs</div><div class="vendor-desc">Agentic AI for Security Operations — autonomous threat response.</div><span class="vendor-tag tag-violet">AI Security</span></div>
+      <div class="vendor-card"><div class="vendor-name">Operlity</div><div class="vendor-desc">Full Stack GRC Solution — an Ejyle company for enterprise compliance.</div><span class="vendor-tag tag-blue">GRC</span></div>
+      <div class="vendor-card"><div class="vendor-name">WitnessAI</div><div class="vendor-desc">AI Security &amp; Governance — policy enforcement over enterprise AI.</div><span class="vendor-tag tag-violet">AI Security</span></div>
+      <div class="vendor-card"><div class="vendor-name">Patchifi</div><div class="vendor-desc">Autonomous Endpoint Management — automated patch remediation.</div><span class="vendor-tag tag-teal">Endpoint</span></div>
+      <div class="vendor-card"><div class="vendor-name">Illumio</div><div class="vendor-desc">Breach Containment Platform — zero trust segmentation.</div><span class="vendor-tag tag-blue">Zero Trust</span></div>
+      <div class="vendor-card"><div class="vendor-name">ExtraHop</div><div class="vendor-desc">Network Detection and Response — real-time hybrid cloud detection.</div><span class="vendor-tag tag-blue">Cyber Defense</span></div>
+      <div class="vendor-card"><div class="vendor-name">Cyber Ranges</div><div class="vendor-desc">Cyber resilience and drills — live-fire team readiness testing.</div><span class="vendor-tag tag-teal">Cyber Resilience</span></div>
+    </div>
+    <div style="text-align:center;margin-top:3rem" class="reveal">
+      <a href="vendors/index.html#vendor-portfolio" class="btn-outline">View full vendor portfolio ↗</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--ivory)">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">What we offer</span>
+      <h2>Value for Every Stakeholder</h2>
+      <p class="lead" style="margin-top:1rem">Whether you are a global technology vendor, a regional channel partner, or an enterprise customer — we deliver measurable value.</p>
+    </div>
+    <div class="offer-tabs">
+      <button class="offer-tab active" onclick="switchTab(this,'vendors-panel')">Vendors</button>
+      <button class="offer-tab" onclick="switchTab(this,'partners-panel')">Channel Partners</button>
+      <button class="offer-tab" onclick="switchTab(this,'customers-panel')">Customers</button>
+    </div>
+    <div id="vendors-panel" class="offer-panel active">
+      <div class="offer-card reveal"><div style="font-size:1.5rem;margin-bottom:0.75rem">🚀</div><h4>Rapid Market Penetration</h4><p>Accelerate growth with proven go-to-market programs tailored for the MEA market across all major countries and verticals.</p></div>
+      <div class="offer-card reveal reveal-delay-1"><div style="font-size:1.5rem;margin-bottom:0.75rem">📣</div><h4>Lead Generation &amp; Enablement</h4><p>Proven lead generation and channel enablement programs that drive pipeline from day one.</p></div>
+      <div class="offer-card reveal reveal-delay-2"><div style="font-size:1.5rem;margin-bottom:0.75rem">🏢</div><h4>Enterprise Access</h4><p>Direct access to key decision makers in over 200 enterprises and 100 systems integrators across the region.</p></div>
+    </div>
+    <div id="partners-panel" class="offer-panel">
+      <div class="offer-card"><div style="font-size:1.5rem;margin-bottom:0.75rem">🤝</div><h4>Joint Go-to-Market</h4><p>Joint sales, lead generation programs, and marketing activities. Co-branded campaigns across MEA.</p></div>
+      <div class="offer-card"><div style="font-size:1.5rem;margin-bottom:0.75rem">🛠️</div><h4>Full Sales &amp; Technical Support</h4><p>Pre-sales technical expertise, proof-of-concept assistance, and flexible financial terms.</p></div>
+      <div class="offer-card"><div style="font-size:1.5rem;margin-bottom:0.75rem">⚡</div><h4>Differentiated Value</h4><p>Next-generation security technologies not available through mainstream distributors in MEA.</p></div>
+    </div>
+    <div id="customers-panel" class="offer-panel">
+      <div class="offer-card"><div style="font-size:1.5rem;margin-bottom:0.75rem">🔓</div><h4>Exclusive Early Access</h4><p>Access to next-generation technologies before they reach mass market.</p></div>
+      <div class="offer-card"><div style="font-size:1.5rem;margin-bottom:0.75rem">🧠</div><h4>Subject Matter Experts</h4><p>Direct access to SMEs in Cloud Infrastructure, Identity, and Information Security.</p></div>
+      <div class="offer-card"><div style="font-size:1.5rem;margin-bottom:0.75rem">🌐</div><h4>Proven Delivery Model</h4><p>Proven service delivery via our established channel network with streamlined procurement.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--parchment)">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">Industries we serve</span>
+      <h2>Built for MEA's Critical Sectors</h2>
+      <p class="lead" style="margin-top:1rem">Deep vertical expertise across the region's most regulated and targeted industries.</p>
+    </div>
+    <div class="ind-grid">
+      <a href="industries/index.html#bfsi" class="ind-card reveal"><div class="ind-icon">🏦</div><div><h4>BFSI</h4><p>SAMA compliance, open banking threats, fraud prevention, and core banking security.</p></div></a>
+      <a href="industries/index.html#government" class="ind-card reveal reveal-delay-1"><div class="ind-icon">🏛️</div><div><h4>Government &amp; Federal</h4><p>NCA/NESA frameworks, sovereign data protection, and critical national infrastructure.</p></div></a>
+      <a href="industries/index.html#telecom" class="ind-card reveal reveal-delay-2"><div class="ind-icon">📡</div><div><h4>Telecom</h4><p>5G security, SS7 vulnerability management, and network slicing protection.</p></div></a>
+      <a href="industries/index.html#enterprise" class="ind-card reveal"><div class="ind-icon">🏢</div><div><h4>Large Enterprise</h4><p>Zero trust architecture, hybrid cloud security, and insider threat management.</p></div></a>
+      <a href="industries/index.html#healthcare" class="ind-card reveal reveal-delay-1"><div class="ind-icon">🏥</div><div><h4>Healthcare</h4><p>HAAD compliance, medical IoT security, and ransomware protection.</p></div></a>
+      <a href="industries/index.html#energy" class="ind-card reveal reveal-delay-2"><div class="ind-icon">⚡</div><div><h4>Energy &amp; OT/ICS</h4><p>IEC 62443 compliance, SCADA security, and OT protection for oil &amp; gas.</p></div></a>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--midnight);position:relative;overflow:hidden">
+  <div class="vm-glow"></div>
+  <div class="container">
+    <div class="section-header reveal" style="margin-bottom:3.5rem">
+      <span class="eyebrow" style="color:var(--violet)">Our purpose</span>
+      <h2 style="color:var(--ghost)">Vision &amp; Mission</h2>
+    </div>
+    <div class="vm-grid">
+      <div class="vm-card reveal">
+        <div style="width:32px;height:3px;border-radius:2px;background:var(--teal);margin-bottom:1.25rem"></div>
+        <h3 style="color:var(--ghost);font-size:1.4rem;margin-bottom:1rem">Vision</h3>
+        <p style="color:var(--mist);font-size:0.95rem;line-height:1.75">To be a true extension of our technology partners — with our deep understanding of the region, ensuring a committed, profitable long-term business for our channel partners and remaining the go-to partner for defining and delivering critical and new-age security initiatives for our customers.</p>
+      </div>
+      <div class="vm-card reveal reveal-delay-2">
+        <div style="width:32px;height:3px;border-radius:2px;background:var(--violet);margin-bottom:1.25rem"></div>
+        <h3 style="color:var(--ghost);font-size:1.4rem;margin-bottom:1rem">Mission</h3>
+        <p style="color:var(--mist);font-size:0.95rem;line-height:1.75">Our mission is to evangelise the adoption of transformative technologies with passion — for our technology partners, end customers, and channel partners across the Middle East and Africa region.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-sm" style="background:var(--ivory)">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">Our leadership</span>
+      <h2>The Team Behind Evanssion</h2>
+    </div>
+    <div class="leader-grid">
+      <div class="leader-card reveal"><div class="leader-avatar">DK</div><div style="font-size:1rem;font-weight:700;color:var(--ink);margin-bottom:0.25rem">Dilip Kalliyat</div><div style="font-size:0.8rem;color:var(--smoke);font-family:var(--inter)">President</div></div>
+      <div class="leader-card reveal reveal-delay-1"><div class="leader-avatar">AA</div><div style="font-size:1rem;font-weight:700;color:var(--ink);margin-bottom:0.25rem">Ashok Chakravarthi</div><div style="font-size:0.8rem;color:var(--smoke);font-family:var(--inter)">Managing Director</div></div>
+      <div class="leader-card reveal reveal-delay-2"><div class="leader-avatar">MK</div><div style="font-size:1rem;font-weight:700;color:var(--ink);margin-bottom:0.25rem">Mohan Krishnamurthy</div><div style="font-size:0.8rem;color:var(--smoke);font-family:var(--inter)">General Manager</div></div>
+    </div>
+    <div style="text-align:center;margin-top:2rem"><a href="company/leadership.html" class="btn-outline-dark">Meet the full team ↗</a></div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--parchment)">
+  <div class="container">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:2.5rem;flex-wrap:wrap;gap:1rem" class="reveal">
+      <div><span class="eyebrow">Latest from Evanssion</span><h2>News &amp; Events</h2></div>
+      <a href="company/newsroom.html" style="font-size:0.85rem;font-weight:600;color:var(--teal);font-family:var(--inter)">View all →</a>
+    </div>
+    <div class="news-grid">
+      <a href="company/newsroom.html" class="news-card reveal"><div class="news-img"><img src="https://www.evanssion.com/wp-content/uploads/2025/09/Website-GITEX-2025-3.png" alt="GITEX Global 2025" loading="lazy"><span class="news-cat cat-event">Event</span></div><div class="news-body"><div class="news-date">September 24, 2025</div><div class="news-title">Evanssion at GITEX Global 2025</div><div class="news-read">Read more →</div></div></a>
+      <a href="company/newsroom.html" class="news-card reveal reveal-delay-1"><div class="news-img"><img src="https://www.evanssion.com/wp-content/uploads/2024/11/bh-medium-banner.webp" alt="Black Hat MEA 2024" loading="lazy"><span class="news-cat cat-event">Event</span></div><div class="news-body"><div class="news-date">November 4, 2024</div><div class="news-title">Evanssion at Black Hat MEA 2024</div><div class="news-read">Read more →</div></div></a>
+      <a href="company/newsroom.html" class="news-card reveal reveal-delay-2"><div class="news-img"><img src="https://www.evanssion.com/wp-content/uploads/2024/09/hackerone-evanssion.webp" alt="HackerOne Partnership" loading="lazy"><span class="news-cat cat-press">Press Release</span></div><div class="news-body"><div class="news-date">September 13, 2024</div><div class="news-title">Evanssion Joins Forces with HackerOne to Bring Human-Powered Security to MEA</div><div class="news-read">Read more →</div></div></a>
+    </div>
+  </div>
+</section>
+
+<section id="cta-band">
+  <div class="container">
+    <div class="cta-inner reveal">
+      <div class="cta-text">
+        <h2>Ready to secure your organisation?</h2>
+        <p>Talk to our team about your cybersecurity challenges. We'll match you with the right technology and the right partner.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn-primary">Contact Us ↗</a>
+        <a href="vendors/index.html#vendor-portfolio" class="btn-outline">Explore Vendors</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo-text">evanssion</div>
+        <p>The MEA region's leading Cybersecurity and AI Value-Added Distributor. Headquartered in Dubai, UAE — operating for 15+ years.</p>
+        <div style="display:flex;gap:1rem;margin-top:1.25rem">
+          <a href="https://www.linkedin.com/company/evanssion" target="_blank" style="font-size:0.82rem;color:var(--mist);font-family:var(--inter)" onmouseover="this.style.color='#00C2A8'" onmouseout="this.style.color='var(--mist)'">LinkedIn ↗</a>
+          <a href="mailto:sales@evanssion.com" style="font-size:0.82rem;color:var(--mist);font-family:var(--inter)" onmouseover="this.style.color='#00C2A8'" onmouseout="this.style.color='var(--mist)'">sales@evanssion.com</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Solutions</h5>
+        <a href="solutions/cloud-native.html">Cloud Native Security</a>
+        <a href="solutions/identity-security.html">Identity Security</a>
+        <a href="solutions/cyber-defense.html">Cyber Defense</a>
+        <a href="solutions/ai-security.html">AI Security</a>
+        <a href="solutions/app-security.html">Application Security</a>
+        <a href="solutions/data-security.html">Data Security</a>
+        <a href="solutions/browser-security.html">Browser Security</a>
+        <a href="solutions/cyber-resilience.html">Cyber Resilience</a>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <a href="company/about.html">About Us</a>
+        <a href="company/leadership.html">Leadership</a>
+        <a href="company/coverage.html">MEA Coverage</a>
+        <a href="vendors/index.html#vendor-portfolio">Vendors</a>
+        <a href="partners/index.html">Partner Program</a>
+        <a href="company/newsroom.html">Newsroom</a>
+        <a href="company/careers.html">Careers</a>
+      </div>
+      <div class="footer-col">
+        <h5>Knowledge</h5>
+        <a href="knowledge/index.html#thought-leadership">Thought Leadership</a>
+        <a href="knowledge/index.html#mea-threat">MEA Threat Landscape</a>
+        <a href="knowledge/index.html#research">Research &amp; Reports</a>
+        <a href="knowledge/index.html#blog">Threat Intel Blog</a>
+        <a href="industries/index.html">Industries</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 Evanssion FZCO · Dubai, UAE · +971 58 606 1125</div>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleMobileMenu(){document.getElementById('mobileMenu').classList.toggle('open');}
+document.addEventListener('click',function(e){const mm=document.getElementById('mobileMenu');const btn=document.querySelector('.nav-mobile-toggle');if(mm&&mm.classList.contains('open')&&!mm.contains(e.target)&&e.target!==btn&&!btn.contains(e.target)){mm.classList.remove('open');}});
+function switchTab(btn,panelId){document.querySelectorAll('.offer-tab').forEach(t=>t.classList.remove('active'));document.querySelectorAll('.offer-panel').forEach(p=>p.classList.remove('active'));btn.classList.add('active');document.getElementById(panelId).classList.add('active');}
+if(location.protocol!=='file:'){document.querySelectorAll('.reveal').forEach(el=>el.classList.add('animate'));const obs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}});},{threshold:0.1,rootMargin:'0px 0px -60px 0px'});document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));}
+</script>
+</body>
+</html>
